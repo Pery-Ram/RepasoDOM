@@ -4,13 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 5</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="./imprimirdatos.js" defer></script>
 </head>
 
 <body>
-    <header><h1>Ejercicio 1: Crear un input tipo texto y un botón. Al apretar en el botón mostrar la información del input en un div y en un alert.</h1></header>
+    <header><h1>Ejercicio 5: Input para pedir cantidad de números de teléfono a introducir. Crear tantos inputs como teléfonos ha requerido el usuario y mediante un botón imprimirlos.</h1></header>
     <main>
+        <form>
+            <label for="numTelefonos"> Cantidad de teléfonos que quieres:</label>
+            <input type="number" id="numTelefonos">
+            <button type="button" id="crear">Crear!</button>
+            <span style="font-size: smaller;"> Se crearán lso campos que indiques apra poder introducir el numero de teléfonos que digas</span>
+        </form>
+        <div id="imprimir">
+
+        </div>
+
     </main>
     <footer>
         <span>Copyright Peter 2024</span>

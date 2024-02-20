@@ -48,7 +48,39 @@ main {
     flex-wrap: wrap; 
 }
 
-
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;;
+}
+label {
+    display: block;
+    margin: 10px 0 -8px 0;
+  }
+input, button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+button:hover{
+    background-color: #576ac2;
+    color: white;
+}
+.inputError {
+    border: 2px solid rgb(247, 49, 49);
+  }
+.inputOk {
+    border: 2px solid rgb(12, 97, 19);
+  }
+  
 
 /**********************************************************************************PIE DE PÁGINA *****************************************/
 

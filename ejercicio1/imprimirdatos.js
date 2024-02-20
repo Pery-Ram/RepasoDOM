@@ -1,8 +1,5 @@
 const button = document.querySelector("button");
 const form = document.querySelector("form");
-const spanError = document.querySelectorAll(".spanError");
-
-let id = 0;
 
 button.addEventListener("click", () => {
     
