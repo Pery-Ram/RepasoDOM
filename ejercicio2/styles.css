@@ -1,0 +1,62 @@
+/********************************************************************************** Configuración Base*****************************************************************************/
+/* Márgenes de la página y bordes a cero*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  /* para poner el footer abajo */
+  html, body {
+    height: 100%;
+  }
+
+  /* footer abajo, y configuración de tipos de familia y tamños de texto general */
+   
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    /********************************************************* CABECERA ********************************************************/
+
+header {
+    background-color: #576ac2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1{
+    font-size: 15px;
+}
+
+/************************************************************************** -- Contenido Central **************************/
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content:space-around; /* Distribuir el espacio horizontalmente */
+    margin: 20px;
+    flex-wrap: wrap; 
+}
+
+
+
+/**********************************************************************************PIE DE PÁGINA *****************************************/
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+}
