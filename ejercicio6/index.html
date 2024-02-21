@@ -4,13 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ejercicio 6</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./imprimirdatos.js" defer></script>
 </head>
 
 <body>
-    <header><h1>Ejercicio 1: Crear un input tipo texto y un botón. Al apretar en el botón mostrar la información del input en un div y en un alert.</h1></header>
+    <header><h1>Ejercicio 6: Crear un pequeño formulario con nombre, teléfono y dirección. Al rellenar el formulario y mediante un botón, introducir los datos en una lista.</h1></header>
     <main>
+        <form>
+            <label for="nombre"> Nombre</label>
+            <input type="text" id="nombre">
+            <label for="tel"> Teléfono</label>
+            <input type="number" id="tel">
+            <label for="direc"> Dirección</label>
+            <input type="text" id="direc">
+            <button type="button">Imprimir!</button>
+        </form>
+        <div id="imprimir">
+
+        </div>
+
     </main>
     <footer>
         <span>Copyright Peter 2024</span>

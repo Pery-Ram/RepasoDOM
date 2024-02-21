@@ -43,10 +43,67 @@ header h1{
 main {
     flex-grow: 1;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content:space-around; /* Distribuir el espacio horizontalmente */
     margin: 20px;
     flex-wrap: wrap; 
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 15, 97);
+    color: white;
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;;
+}
+label {
+    display: block;
+    margin: 10px 0 -8px 0;
+  }
+input, button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+button:hover{
+    background-color: #576ac2;
+    color: white;
+}
+.inputError {
+    border: 2px solid rgb(247, 49, 49);
+  }
+  
+  .spanError {
+    color: rgb(247, 49, 49);
+    font-size: small;
+  }
+
+#imprimir{
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: #576ac2;
+    color: white;
+}
+    li {
+        padding: 5px;
+        
+    }
+    .nombre{
+        font-weight: bold;
+    }
+    .datos{
+        font-weight:400;
+        font-style: italic;
+    }
 
 
 
