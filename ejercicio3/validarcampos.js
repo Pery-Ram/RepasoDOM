@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
   texto.classList.remove("inputError");
 
   // texto
-  if (texto.value <= 18) {
+  if (texto.value < 18) {
     texto.classList.add("inputError");
     spanError.innerHTML = "Eres MENOR de 18";
     validacion= false;

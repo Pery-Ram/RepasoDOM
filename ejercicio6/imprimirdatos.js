@@ -33,8 +33,7 @@ button.addEventListener("click", () => {
     arrayContenido.push(nombre.value); 
     for (let i = 0; i < arrayContenido.length; i++) {
       divimprimir.innerHTML +=
-      `<article> 
-        <ul>
+      `<ul>
           <li class="nombre">${nombre.value} :
             <ul>
               <li>${tel.value}</li>
