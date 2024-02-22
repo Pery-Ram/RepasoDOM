@@ -46,9 +46,23 @@ main {
     justify-content:space-around; /* Distribuir el espacio horizontalmente */
     margin: 20px;
     flex-wrap: wrap; 
+    
+}
+#contenedor{
+  width: 75%;
+display: flex;
+flex-direction: column;
+}
+#calculadoras{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 80%;
 }
 .calculadora {
+    display: block;
     border: 1px solid #ccc;
+    border-radius: 15px;
     padding: 10px;
     margin: 10px;
     width: 300px;
@@ -58,6 +72,13 @@ main {
   }
   .calculadora button {
     margin-top: 10px;
+  }
+  .resultado{
+    font-weight: bold;
+  }
+  .resultadoV{
+    color: coral;
+    font-size:large;
   }
 
 

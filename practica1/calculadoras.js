@@ -4,8 +4,8 @@ const calculadorasDiv = document.getElementById("calculadoras");
 
 crearCalculadorasButton.addEventListener("click", () => {
   const numCalculadoras = parseInt(numCalculadorasInput.value);
-  if (isNaN(numCalculadoras) || numCalculadoras <= 0) {
-    alert("Introdueix un número positiu");
+  if (numCalculadoras <= 0) {
+    alert("introduce un número positivo");
     return;
   }
 
@@ -56,7 +56,7 @@ crearCalculadorasButton.addEventListener("click", () => {
           break;
       }
 
-      resultadoParrafo.textContent = `Resultat: ${resultado}`;
+      resultadoParrafo.innerHTML = `<span class="resultado">RESULTADO: <span class="resultadoV">${resultado}</span>`;
     });
   }
 });

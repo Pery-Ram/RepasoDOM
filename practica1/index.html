@@ -13,7 +13,7 @@
     <header><h1>Actividad 1:</h1>
         <p>Se pregunta a l'usuari quantes calculadores vol crear mitjançant un camp tipus "input" numèric.<br>
             Una vegada introduït s'han de crear aquesta quantitat de calculadores mitjançant un botó dins d'un div amb “id” amb valor “–”. Un exemple de l'estructura de 3 calculadores:<br>
-            <img src="../img/calculadora_actividad1.PNG" height="50">
+            
             Cada calculadora permet dur a terme l'operació de suma, resta, divisió i multiplicació de manera independent.<br>
             Material d'anàlisi:<br>
             setAttribute()
@@ -22,25 +22,15 @@
     <main>
 
 
-  <h1>Quantes calculadores vols crear?</h1>
-  <input type="number" id="numCalculadoras" placeholder="Introdueix un número">
-  <button id="crearCalculadoras">Crear calculadores</button>
+  <h1>Cuántas calculadoras quieres crear?</h1>
+  <div id="contenedor">
+  <input type="number" id="numCalculadoras" placeholder="introduce un numero">
+  <button id="crearCalculadoras">Crear calculadoras</button>
   <div id="calculadoras">
-    <input type="number" id="primerNumero${i}" placeholder="Primer número">
-    <input type="number" id="segonNumero${i}" placeholder="Segon número">
-    <select id="operacion${i}">
-      <option value="suma">Suma</option>
-      <option value="resta">Resta</option>
-      <option value="multiplicacion">Multiplicació</option>
-      <option value="division">Divisió</option>
-    </select>
-    <button id="calcular${i}">Calcular</button>
-    <p id="resultado${i}"></p>
-
-
   </div>
-
+  </div>
     </main>
+
     <footer>
         <span>Copyright Peter 2024</span>
     </footer>
