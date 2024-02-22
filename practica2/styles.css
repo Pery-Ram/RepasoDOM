@@ -43,10 +43,33 @@ header h1{
 main {
     flex-grow: 1;
     display: flex;
+    flex-direction: column;
     justify-content:space-around; /* Distribuir el espacio horizontalmente */
     margin: 20px;
     flex-wrap: wrap; 
 }
+#texto{
+    width: 350px;
+    height: 150px;
+}
+.contenedor{
+    width: 35%;
+    background-color: #000838;
+    border-radius: 15px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+    h1{
+        color: white;
+    }
+    button{
+        border-radius: 5px;
+        background-color: #576ac2;
+        color: white;
+        font-size: 18px;
+        margin: 5px;
+    }
 
 
 

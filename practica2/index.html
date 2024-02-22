@@ -1,19 +1,80 @@
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+    <title>Teclat virtual</title>
+  <style>
+    .teclado {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px;
+      width: 500px;
+    }
+    .teclado button {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+    }
+  </style>
 </head>
-
 <body>
-    <header><h1>Ejercicio 1: Crear un input tipo texto y un botón. Al apretar en el botón mostrar la información del input en un div y en un alert.</h1></header>
+    <header><h1>Actividad 2:</h1>
+        <p>S'ha de crear un teclat virtual que permeti escriure mitjançant diferents inputs que simulen cadascuna de les lletres de l'abecedari:<br>
+            <img src="../img/teclado_actividad2.PNG" height="50"><br>
+            Intro que efectua un salt de línia. Shift que una vegada polsada commuta entre minúscules i majúscules. Space que escriu un espai.
+            Delete que esborra l'últim caràcter.
+            La zona on es veurà reflectit el text és un textarea i tot el contingut ha de crear-se des de JS, tenint en l'HTML un únic div. Material d'anàlisi:<br>
+            setAttribute()
+            </p>
+    </header>
     <main>
-    </main>
-    <footer>
-        <span>Copyright Peter 2024</span>
-    </footer>
+  <div class="contenedor">
+        <h1>Teclat virtual</h1>
+     <textarea id="texto"></textarea>
+    <div id="teclado"></div>
+  <script>
+    const tecladoDiv = document.getElementById("teclado");
+const textoTextarea = document.getElementById("texto");
+
+const letrasMinusculas = "abcdefghijklmnñopqrstuvwxyz.,";
+const letrasMayusculas = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ:;";
+
+let mayusculasActivas = false;
+
+const crearTeclado = () => {
+  let tecladoHTML = "";
+
+  // Botons de les lletres
+  for (let i = 0; i < letrasMinusculas.length; i++) {
+    const letra = letrasMinusculas[i];
+    const letraMayuscula = letrasMayusculas[i];
+    tecladoHTML += `<button onclick="textoTextarea.value += '${mayusculasActivas ? letraMayuscula : letra}'">${mayusculasActivas ? letraMayuscula : letra}</button>`;
+  }
+
+    // Botó Intro
+    tecladoHTML += `<br><button onclick="textoTextarea.value += '\\n'">Intro</button>`;
+
+    // Botó Shift
+    tecladoHTML += `<button onclick="mayusculasActivas = !mayusculasActivas; crearTeclado()">Shift</button>`;
+
+    // Botó Espai
+    tecladoHTML += `<button onclick="textoTextarea.value += ' '">Espai</button>`;
+
+    // Botó Delete
+    tecladoHTML += `<button onclick="textoTextarea.value = textoTextarea.value.slice(0, -1)">Delete</button>`;
+
+    tecladoDiv.innerHTML = tecladoHTML;
+    };
+
+crearTeclado();
+  </script>
+</div>
+</div>
+</main>
+<footer>
+    <span>Copyright Peter 2024</span>
+</footer>
 </body>
 </html>

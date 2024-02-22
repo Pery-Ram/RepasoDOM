@@ -47,7 +47,18 @@ main {
     margin: 20px;
     flex-wrap: wrap; 
 }
-
+.calculadora {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+  }
+  .calculadora input {
+    width: 100px;
+  }
+  .calculadora button {
+    margin-top: 10px;
+  }
 
 
 /**********************************************************************************PIE DE PÁGINA *****************************************/
